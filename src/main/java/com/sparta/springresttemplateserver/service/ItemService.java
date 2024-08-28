@@ -43,7 +43,11 @@ public class ItemService {
     return getCallObject(query);
   }
 
-  public ItemResponseDto exchangeCall(String token, UserRequestDto requestDto) {
-    return null;
+  public ItemResponseDto exchangeCall(String token, UserRequestDto userRequestDto) {
+    System.out.println("token = " + token);
+    System.out.println("userRequestDto.getUsername() = " + userRequestDto.getUsername());
+    System.out.println("userRequestDto.getPassword() = " + userRequestDto.getPassword());
+
+    return getCallList();
   }
 }
